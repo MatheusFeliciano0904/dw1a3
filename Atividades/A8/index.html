@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoluções Flexbox e Grid CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .column {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .response {
+            font-family: "Courier New", Courier, monospace;
+            background: #e9eff9;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap; /* Mantém formatação com quebras */
+        }
+    </style>
+</head>
+<body>
+    <!-- Coluna para Grid CSS -->
+    <div class="column">
+        <h1>Resoluções Grid CSS</h1>
+        <!-- Respostas Grid CSS -->
+        <div class="container">
+            <h2>1ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 3;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>2ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#poison {
+  grid-column-start: 5;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>3ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>4ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 5;
+  grid-column-end: 2;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>5ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: -2;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>6ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#poison {
+  grid-column-start: -3;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>7ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>8ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>9ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>10ª Resposta</h2>
+            <div class="response">
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column: 4 / 6;
+}
+            </div>
+        </div>
+    </div>
+
+    <!-- Coluna para Flexbox -->
+    <div class="column">
+        <h1>Resoluções Flexbox</h1>
+        
+    <!-- Respostas -->
+    <div class="container">
+        <h2>1ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    justify-content: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>2ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    justify-content: flex-end;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>3ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    justify-content: space-between;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>4ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    justify-content: space-around;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>5ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    justify-content: space-evenly;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>6ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    align-items: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>7ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    align-items: flex-end;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>8ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>9ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>10ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: column;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>11ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: row-reverse;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>12ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>13ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>14ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>15ª Resposta</h2>
+        <div class="response">
+#arthur { 
+    order: 2;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>16ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+}
+
+#marilyn {
+    align-self: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>17ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+}
+
+#haymitch {
+    align-self: flex-end;
+    order: 1;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>18ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>19ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    justify-content: center;
+}
+
+#arthur {
+    align-self: center;
+    order: 2;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>20ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-wrap: wrap;
+    /* ou flex-flow: wrap; */
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>21ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>22ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>23ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>24ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+}
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>26ª Resposta</h2>
+        <div class="response">
+#field { 
+    display: flex;
+}
+
+#arthur {
+    align-self: center;
+    order: 3;
+}
+        </div>
+    </div>
+    </div>
+</body>
+</html>
